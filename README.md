@@ -1,8 +1,8 @@
 # **portfolio Mathieu Debrabander**
-## repositorio de proyectos de Data Science:
-- propensión_compra_productos_financieros modelos de aprendizaje supervisado
-- modelos de aprendizaje no supervisado
-- dashboard de visualización de datos
+## entidad financiera solicita:</br>
+- dashboard en Power BI para ver los insights fácilmente
+- una propensión de compra de los productos de mi elección para los clientes existentes
+- una segmentación de los clientes para conocerlos mejor
 
 1. propensión_compra_productos_financieros</br>
 objetivo: 
