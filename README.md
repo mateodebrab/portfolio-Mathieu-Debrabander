@@ -30,7 +30,7 @@ Son 7 pestañas:
 > - alertas: focus en los 5 productos con peores resultados respecto al año anterior, en volumen y procentaje
 ***
 ***
-### 2. propensión de compra de clientes existentes 
+### 2. propensión de compra de clientes existentes: Machine Learning con aprendizaje supervisado
 **notebook:** [propension_compra.ipynb](/propensión_compra.ipynb)  
 
 **reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes. 
@@ -81,7 +81,7 @@ Este es el resultado para los clientes con una propensión de compra mayor de 90
 ![Alt text](/potencial_por_producto.jpg)
 
 ***
-### 3. segmentación de la clientela
+### 3. segmentación de la clientela: : Machine Learning con aprendizaje no supervisado
 **notebook:** [segmentacion_clientela.ipynb](/segmentación_clientela.ipynb) 
 
 **reto:** segmentar los clientes en un número coherente de clústers para identificarlos mejor y definir acciones comerciales apropiadas.  
@@ -97,4 +97,34 @@ Para determinar el número optimo de clústers, uso el metodo del codo `KElbowVi
 
 ![Alt text](/kmeans_elbow.jpg) 
 
-Realizo el clustering aglomerativo con el metodo `KMeans()` de la libreria scikit-learn.
+Realizo el clustering aglomerativo con el metodo `KMeans()` de la libreria scikit-learn, con el parametro k=6.  
+
+Realizo un EDA sobre las variables para comparar la distribución según el clúster de pertenencia.  
+Analizo también las variables con el metodo `.describe()`.  
+A modo de ejemplo, se muestran los clientes activos y la antigüedad según el clúster.  
+
+![Alt text](/active_por_cluster.jpg)  
+
+![Alt text](/antiguedad_por_cluster.jpg)  
+
+**resumen del perfilado de los clústers: **  
+* **UNIVERSITARIO:**  
+  entre 22 y 24 años, no activo, navideño, cliente cuenta easyMoney
+> - canal de entrada KHQ: nuevo cliente
+> - canal de entrada KHE: antiguos cliente
+* **PARTICULAR:**  
+entre 30 y 45 años, salario de 90 K€
+> - totalmente activo: cliente plan de pensión
+> - poco activo: cliente todos productos menos plan de pensión
+>> - canal de entrada KHM u otros: nuevo cliente
+>> - canal de entrada KFC: antiguo cliente
+* **TOP:**  
+entre 40 y 60 años, 120 K€ de salario, totalmente activo, cliente de crypto y cuenta easyMoney  
+
+**conclusiones: **  
+**recomendaciones para las acciones de marketing de captación:**
+> - campaña navideña para el universitario sobre el producto easyMoney con el canal de entrada KHQ
+> - campaña para el particular de 29 a 42 años de menos de 100.000€ sobre el plan de pensión
+> - campaña para el particular de 32 a 49 años de menos de 100.000€ sobre la cuenta easyMoney con el canal de entrada KHM
+> - campaña  para el particular de 40 a 60 años de más de 100.000€ sobre la crypto
+***
