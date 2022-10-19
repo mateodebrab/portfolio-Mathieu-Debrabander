@@ -84,4 +84,5 @@ Este es el resultado para los clientes con una propensión de compra mayor de 90
 ### 3. segmentación de la clientela
 **notebook:** [segmentacion_clientela.ipynb](/segmentación_clientela.ipynb) 
 
+**reto:** segmentar los clientes en un número coherente de clústers para identificarlos mejor y definir acciones comerciales apropiadas.  
 
