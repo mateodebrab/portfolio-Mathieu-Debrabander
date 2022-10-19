@@ -8,6 +8,7 @@
 > - 1 archivo de las 240.000 ventas de 17 meses 
 > - 1 archivo con la codificación de los productos
 ***
+***
 ### 1. dashboard en Power BI
 En cada pestaña se puede filtrar:
 > - año y mes
@@ -25,6 +26,7 @@ Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dash
 > - producto: KPIs de los productos, en volumen y variación interanual y la proporción respectiva de cada producto respecto al total
 > - top 1 ventas: focus los KPIs del producto con mayor margen neto del momento
 > - alertas: focus en los 5 productos con peores resultados respecto al año anterior, en volumen y procentaje
+***
 ***
 ### 2. propensión de compra de clientes existentes 
 **notebook:** [propension_compra.ipynb](/propensión_compra.ipynb)  
