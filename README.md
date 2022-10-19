@@ -29,12 +29,32 @@ Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dash
 ### 2. propensión de compra de clientes existentes 
 **notebook:** [propension_compra.ipynb](/propensión_compra.ipynb)  
 
-**reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes.  
-Se escogen 4 productos: el top ventas y las 3 peores alertas.  
-Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable. Por ejemplo, el KDE de la edad de los clientes que compran el producto corto plazo vs la edad de los que no compran:
+**reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes. 
+  
+  
+Se escogen 4 productos: el top ventas y las 3 peores alertas.    
+
+Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable. Por ejemplo, el KDE de la edad de los clientes que compran el producto corto plazo vs la edad de los que no compran. También, para cada producto, se analizan las variables más importantes para el modelo.
 
 ![Alt text](/kde_age_short_term.jpg)
+![Alt text](/feature_importance_long_term.jpg)
 
+Para cada producto, se entrenan 6 modelos: 
+> - Support Vector Machine
+> - Regresión logística
+> - Decision tree classsifier
+> - Random forest
+> - Gradient boosting
+> - XGBClassifier  
+
+Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas variables y eliminando variables que aportan poco al modelo para ciertos productos. Después se hiperparametriza el modelo de cada producto. El resultado es el siguiente:  
+
+|**PRODUCTO**|**ALGORITMO**|**AUC SCORE**|
+|--------|--------|--------|
+|plan de pensión|XGBClassifier|0,80920|
+|inv. corto plazo|Regresión logística|0,95427|
+|inv. largo plazo|XGBClassifier|0,87688|
+|fondo de inv.|Regresión logística|0,88856|
 ***
 ### 3. segmentación de la clientela
 This is a normal paragraph:
@@ -43,11 +63,18 @@ This is a normal paragraph:
 
 ![Alt text](/IMG1.jpg "Optional title")
 
-|Columna 1|Columna 2|
-|--------|--------|
-|    A    |    B    |
-|    C    |    D    |
+
 Puedes colocar [^1] notas en el pie de página [^2] fácilmente.
 
 [^2]: **Las notas de pie de página** pueden *formatearse* también.
 Estas pueden ocupar varias líneas.
+[img1]: /foto_pagina1_dashboard "Título alternativo"
+[img2]: /foto_pagina1_dashboard "Título alternativo"
+De esta forma podrías insertar una imagen  
+
+![nombre de la imagen][img1]  
+
+O dos, sin ensuciar tu espacio de escritura.  
+
+![nombre de la imagen2][img2] 
+
