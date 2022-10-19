@@ -86,3 +86,13 @@ Este es el resultado para los clientes con una propensión de compra mayor de 90
 
 **reto:** segmentar los clientes en un número coherente de clústers para identificarlos mejor y definir acciones comerciales apropiadas.  
 
+Después de la limpieza de datos, gestión de nulos y feature_engineering se crea la variable 'alta_navidad' porque se aprecia una cierta ciclicidad en la antigüedad.  
+Se plotea las variables intrinsecas para ver cuales son las que aportan más valor a modelo:  
+
+![Alt text](/explained_variance.jpg)  
+
+Para determinar el número optimo de clústers, uso el metodo del codo de la libreria yellowbrick: `KElbowVisualizer()`.  
+6 es el número optimo de clústers:  
+
+
+![Alt text](/explained_variance.jpg) 
