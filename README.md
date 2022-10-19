@@ -38,7 +38,9 @@ Son 7 pestañas:
   
 Se escogen 4 productos: el top ventas y las 3 peores alertas.    
 
-Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable. Por ejemplo, el KDE de la edad de los clientes que compran el producto corto plazo vs la edad de los que no compran. También, para cada producto, se analizan las variables más importantes para el modelo.
+Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable.  
+Por ejemplo, se muestra el KDE de la edad de los clientes que compran el producto corto plazo vs la edad de los que no compran.  
+También, para cada producto, se analizan las variables más importantes para el modelo.
 
 ![Alt text](/kde_age_short_term.jpg)
 ![Alt text](/feature_importance_long_term.jpg)
@@ -51,7 +53,8 @@ Para cada producto, se entrenan 6 modelos:
 > - Gradient boosting
 > - XGBClassifier  
   
-Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas variables y eliminando variables que aportan poco al modelo para ciertos productos. Después se hiperparametriza el modelo de cada producto. El resultado es el siguiente:  
+Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas variables y eliminando variables que aportan poco al modelo para ciertos productos. Después se hiperparametriza el modelo de cada producto.  
+El resultado es el siguiente:  
 
 |**PRODUCTO**|**ALGORITMO**|**AUC SCORE**|
 |--------|--------|--------|
@@ -60,7 +63,8 @@ Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas
 |inv. largo plazo|XGBClassifier|0,87688|
 |fondo de inv.|Regresión logística|0,88856|  
 
-**Predicción:** se realiza la predicción con el comando `.predict_proba()` que devuelve la probabilidad de compra para cada cliente en lugar de una clasificación binaria de 0 o 1. Por ejemplo, el resultado para el producto inv. corto plazo es así:  
+**Predicción:** se realiza la predicción con el comando `.predict_proba()` que devuelve la probabilidad de compra para cada cliente en lugar de una clasificación binaria de 0 o 1.  
+Por ejemplo, el resultado para el producto inv. corto plazo es así:  
 
 |**ID_CLIENTE**|**PROPENSIÓN DE COMPRA**|
 |--------|--------|
@@ -71,7 +75,8 @@ Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas
 |1398913|0,99817|
 |etc...|etc...| 
 
-**potencial de margen neto**: para calcular el potencial de margen neto por cliente, se multiplica al margen neto medio del producto por la precisión del modelo y por la propensión de compra del cliente. El area de marketing solo tiene que definir cuantos clientes quiere contactar o cual es el umbral de propensión que desae según el presupuesto. Se le puede dar el número de clientes por encima del porcentaje definido y el potencial de margen neto para esos clientes. Este es el resultado para los clientes con una propensión de compra mayor de 90%:  
+**potencial de margen neto**: para calcular el potencial de margen neto por cliente, se multiplica al margen neto medio del producto por la precisión del modelo y por la propensión de compra del cliente. El area de marketing solo tiene que definir cuantos clientes quiere contactar o cual es el umbral de propensión que desae según el presupuesto. Se le puede dar el número de clientes por encima del porcentaje definido y el potencial de margen neto para esos clientes.  
+Este es el resultado para los clientes con una propensión de compra mayor de 90%:  
 
 ![Alt text](/potencial_por_producto.jpg)
 
