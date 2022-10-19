@@ -31,10 +31,9 @@ Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dash
 
 **reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes.  
 Se escogen 4 productos: el top ventas y las 3 peores alertas.  
-Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable.  
+Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable. Por ejemplo, el KDE de la edad de los clientes que compran el producto corto plazo vs la edad de los que no compran:
 
-ejemplo:  
-![Alt text](/kde_age_short term.jpg)
+![Alt text](/kde_age_short_term.jpg)
 
 ***
 ### 3. segmentación de la clientela
