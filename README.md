@@ -12,6 +12,8 @@ En cada pestaña se puede filtrar:
 - año y mes
 - margen neto, cantidades vendidas o número de clientes
 - nuevos clientes, clientes existentes o todos  
+visualización de la página de inicio:
+![Alt text](/IMG1.jpg "Optional title")
 
 Son 7 pestañas:
 - vefcasd  
@@ -24,7 +26,7 @@ This is a normal paragraph:
 
     This is a code block.
 
-![Alt text](https://drive.google.com/file/d/10a8VNlecjZwpRo-lwXynWLk9Gp4DYODz/view?usp=sharing "Optional title")
+![Alt text](/IMG1.jpg "Optional title")
 
 |Columna 1|Columna 2|
 |--------|--------|
