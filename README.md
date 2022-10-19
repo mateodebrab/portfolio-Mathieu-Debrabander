@@ -91,8 +91,10 @@ Se plotea las variables intrinsecas para ver cuales son las que aportan más val
 
 ![Alt text](/explained_variance.jpg)  
 
-Para determinar el número optimo de clústers, uso el metodo del codo de la libreria yellowbrick.cluster: `KElbowVisualizer()`.  
+Para determinar el número optimo de clústers, uso el metodo del codo `KElbowVisualizer()` de la libreria yellowbrick.cluster.  
 6 es el número optimo de clústers:  
 
 
 ![Alt text](/kmeans_elbow.jpg) 
+
+Realizo el clustering aglomerativo con el metodo `KMeans()` de la libreria scikit-learn.
