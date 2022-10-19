@@ -13,7 +13,7 @@ En cada pestaña se puede filtrar:
 - margen neto, cantidades vendidas o número de clientes
 - nuevos clientes, clientes existentes o todos  
 visualización de la página de inicio:
-![Alt text](/IMG1.jpg "Optional title")
+![Alt text](/pdf_pagina1_dashboard.pdf "Optional title")
 
 Son 7 pestañas:
 - vefcasd  
