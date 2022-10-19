@@ -16,7 +16,7 @@ En cada pestaña se puede filtrar:
 visualización de la página de inicio: 
 ![Alt text](/foto_pagina1_dashboard.jpg)
 
-Son 7 pestañas: (pdf del dashboard completo: [Link](https://ejemplo.com/ "Título opcional del enlace"))
+Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dashboard_Power_BI.pdf))
 > - general: KPIs generales en volumen y variación interanual
 > - cliente: atributos de cliente (segmento, edad media por producto, cantidad de clientes por producto, país, salario, genero)
 > - mapa de España con los KPIs por provincia, en volumen y variación interanual
