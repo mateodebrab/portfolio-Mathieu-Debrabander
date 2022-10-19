@@ -34,7 +34,7 @@ Se escogen 4 productos: el top ventas y las 3 peores alertas.
 Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable.  
 
 ejemplo:  
-![Alt text](/kde age short term.jpg)
+![Alt text](/kde_age_short term.jpg)
 
 ***
 ### 3. segmentación de la clientela
