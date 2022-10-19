@@ -13,7 +13,7 @@ En cada pestaña se puede filtrar:
 > - año y mes
 > - margen neto, cantidades vendidas o número de clientes
 > - nuevos clientes, clientes existentes o todos 
-
+  
 visualización de la página de inicio:  
 ![Alt text](/foto_pagina1_dashboard.jpg)
 
@@ -46,7 +46,7 @@ Para cada producto, se entrenan 6 modelos:
 > - Random forest
 > - Gradient boosting
 > - XGBClassifier  
-
+  
 Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas variables y eliminando variables que aportan poco al modelo para ciertos productos. Después se hiperparametriza el modelo de cada producto. El resultado es el siguiente:  
 
 |**PRODUCTO**|**ALGORITMO**|**AUC SCORE**|
@@ -54,27 +54,25 @@ Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas
 |plan de pensión|XGBClassifier|0,80920|
 |inv. corto plazo|Regresión logística|0,95427|
 |inv. largo plazo|XGBClassifier|0,87688|
-|fondo de inv.|Regresión logística|0,88856|
+|fondo de inv.|Regresión logística|0,88856|  
+
+**Predicción:** se realiza la predicción con el comando `.predict_proba()` que devuelve la probabilidad de compra para cada cliente en lugar de una clasificación binaria de 0 o 1. Por ejemplo, el resultado para el producto inv. corto plazo es así:  
+
+|**ID_CLIENTE**|**PROPENSIÓN DE COMPRA**|
+|--------|--------|
+|1421783|0,998649|
+|1409335|0,998569|
+|1440606|0,998248|
+|1452072|0,998209|
+|1398913|0,99817|
+|etc...|etc...| 
+
+**potencial de margen neto**: para calcular el potencial de margen neto por cliente, se multiplica al margen neto medio del producto por la precisión del modelo y por la propensión de compra del cliente. El area de marketing solo tiene que definir cuantos clientes quiere contactar o cual es el umbral de propensión que desae según el presupuesto. Se le puede dar el número de clientes por encima del porcentaje definido y el potencial de margen neto para esos clientes:
+
 ***
 ### 3. segmentación de la clientela
 This is a normal paragraph:
 
     This is a code block.
 
-![Alt text](/IMG1.jpg "Optional title")
-
-
-Puedes colocar [^1] notas en el pie de página [^2] fácilmente.
-
-[^2]: **Las notas de pie de página** pueden *formatearse* también.
-Estas pueden ocupar varias líneas.
-[img1]: /foto_pagina1_dashboard "Título alternativo"
-[img2]: /foto_pagina1_dashboard "Título alternativo"
-De esta forma podrías insertar una imagen  
-
-![nombre de la imagen][img1]  
-
-O dos, sin ensuciar tu espacio de escritura.  
-
-![nombre de la imagen2][img2] 
 
