@@ -67,7 +67,9 @@ Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas
 |1398913|0,99817|
 |etc...|etc...| 
 
-**potencial de margen neto**: para calcular el potencial de margen neto por cliente, se multiplica al margen neto medio del producto por la precisión del modelo y por la propensión de compra del cliente. El area de marketing solo tiene que definir cuantos clientes quiere contactar o cual es el umbral de propensión que desae según el presupuesto. Se le puede dar el número de clientes por encima del porcentaje definido y el potencial de margen neto para esos clientes:
+**potencial de margen neto**: para calcular el potencial de margen neto por cliente, se multiplica al margen neto medio del producto por la precisión del modelo y por la propensión de compra del cliente. El area de marketing solo tiene que definir cuantos clientes quiere contactar o cual es el umbral de propensión que desae según el presupuesto. Se le puede dar el número de clientes por encima del porcentaje definido y el potencial de margen neto para esos clientes. Este es el resultado para los clientes con una propensión de compra mayor de 90%:  
+
+![Alt text](/potencial_por_producto.jpg)
 
 ***
 ### 3. segmentación de la clientela
