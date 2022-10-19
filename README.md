@@ -91,7 +91,7 @@ Se plotea las variables intrinsecas para ver cuales son las que aportan más val
 
 ![Alt text](/explained_variance.jpg)  
 
-Para determinar el número optimo de clústers, uso el metodo del codo de la libreria yellowbrick: `KElbowVisualizer()`.  
+Para determinar el número optimo de clústers, uso el metodo del codo de la libreria yellowbrick.cluster: `KElbowVisualizer()`.  
 6 es el número optimo de clústers:  
 
 
