@@ -27,7 +27,9 @@ Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dash
 > - alertas: focus en los 5 productos con peores resultados respecto al año anterior, en volumen y procentaje
 ***
 ### 2. propensión de compra de clientes existentes
-reto: crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra). De esta forma, solo se obtienen los atributos de los clientes existentes, los nuevos clientes no se integra, que n
+**reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes.  
+Se escogen 4 productos: el top ventas y las 3 peores alertas.  
+Después de la limpieza de datos, se realiza un EDA para cuales son las variables más influentes:
 ***
 ### 3. segmentación de la clientela
 This is a normal paragraph:
