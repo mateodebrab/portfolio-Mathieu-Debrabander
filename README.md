@@ -10,6 +10,8 @@
 ***
 ***
 ### 1. dashboard en Power BI
+pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dashboard_Power_BI.pdf)  
+
 En cada pestaña se puede filtrar:
 > - año y mes
 > - margen neto, cantidades vendidas o número de clientes
@@ -18,7 +20,7 @@ En cada pestaña se puede filtrar:
 visualización de la página de inicio:  
 ![Alt text](/foto_pagina1_dashboard.jpg)
 
-Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dashboard_Power_BI.pdf))
+Son 7 pestañas: 
 > - general: KPIs generales en volumen y variación interanual
 > - cliente: atributos de cliente (segmento, edad media por producto, cantidad de clientes por producto, país, salario, genero)
 > - mapa de España con los KPIs por provincia, en volumen y variación interanual
