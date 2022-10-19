@@ -95,4 +95,4 @@ Para determinar el número optimo de clústers, uso el metodo del codo de la lib
 6 es el número optimo de clústers:  
 
 
-![Alt text](/explained_variance.jpg) 
+![Alt text](/kmeans_elbow.jpg) 
