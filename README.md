@@ -75,8 +75,6 @@ Se escoge el mejor modelo de base. Se retrabaja el preprocessing, creando nuevas
 
 ***
 ### 3. segmentación de la clientela
-This is a normal paragraph:
-
-    This is a code block.
+**notebook:** [segmentacion_clientela.ipynb](/segmentación_clientela.ipynb) 
 
 
