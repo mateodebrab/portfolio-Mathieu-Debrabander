@@ -14,7 +14,7 @@ En cada pestaña se puede filtrar:
 > - margen neto, cantidades vendidas o número de clientes
 > - nuevos clientes, clientes existentes o todos 
 
-visualización de la página de inicio: 
+visualización de la página de inicio:  
 ![Alt text](/foto_pagina1_dashboard.jpg)
 
 Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dashboard_Power_BI.pdf))
@@ -26,10 +26,15 @@ Son 7 pestañas: (pdf del dashboard completo: [pdf_dashboard_Power_BI](/pdf_dash
 > - top 1 ventas: focus los KPIs del producto con mayor margen neto del momento
 > - alertas: focus en los 5 productos con peores resultados respecto al año anterior, en volumen y procentaje
 ***
-### 2. propensión de compra de clientes existentes
+### 2. propensión de compra de clientes existentes 
+**notebook:** [propension_compra.ipynb](/propensión_compra.ipynb)  
+
 **reto:** crear un dataset de entrenamiento que recoja los atributos de los clientes del mes anterior a la compra. Solo se actualizan los datos un vez al mes. De no hacerlo así, se correría el riesgo de entrenar a tiempo futuro (los atributos del cliente puede variar durante el mes de la compra) y de entrenar con nuevos clientes.  
 Se escogen 4 productos: el top ventas y las 3 peores alertas.  
-Después de la limpieza de datos, se realiza un EDA para cuales son las variables más influentes:
+Después de la limpieza de datos, se realiza un EDA para ver como cambia la distribución de la población según la variable. 
+
+Ejemplo:  
+![Alt text](\kde age short term.jpg)
 ***
 ### 3. segmentación de la clientela
 This is a normal paragraph:
