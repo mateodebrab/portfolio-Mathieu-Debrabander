@@ -107,21 +107,18 @@ A modo de ejemplo, se muestran los clientes activos y la antigüedad según el c
 
 ![Alt text](/antiguedad_por_cluster.jpg)  
 
-**resumen del perfilado de los clústers: **  
-* **UNIVERSITARIO:**  
-  entre 22 y 24 años, no activo, navideño, cliente cuenta easyMoney
+**resumen del perfilado de los clústers:**  
+* **UNIVERSITARIO:** entre 22 y 24 años, no activo, navideño, cliente cuenta easyMoney
 > - canal de entrada KHQ: nuevo cliente
 > - canal de entrada KHE: antiguos cliente
-* **PARTICULAR:**  
-entre 30 y 45 años, salario de 90 K€
+* **PARTICULAR:** entre 30 y 45 años, salario de 90 K€
 > - totalmente activo: cliente plan de pensión
 > - poco activo: cliente todos productos menos plan de pensión
 >> - canal de entrada KHM u otros: nuevo cliente
 >> - canal de entrada KFC: antiguo cliente
-* **TOP:**  
-entre 40 y 60 años, 120 K€ de salario, totalmente activo, cliente de crypto y cuenta easyMoney  
+* **TOP:** entre 40 y 60 años, 120 K€ de salario, totalmente activo, cliente de crypto y cuenta easyMoney  
 
-**conclusiones: **  
+**conclusiones:**  
 **recomendaciones para las acciones de marketing de captación:**
 > - campaña navideña para el universitario sobre el producto easyMoney con el canal de entrada KHQ
 > - campaña para el particular de 29 a 42 años de menos de 100.000€ sobre el plan de pensión
